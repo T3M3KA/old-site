@@ -15,7 +15,7 @@
 body {
 	background-color: var(--dark-green);
 	color: var(--light);
-	max-width: 54rem ;
+	max-width: 58rem ;
 	margin: auto ;
 	padding: 0.5rem;
     font-family: 'Chakra Petch', sans-serif;
@@ -74,7 +74,9 @@ body.must-play {
 .headtext {
     font-size: 50px;
     font-weight: 700;
-	letter-spacing:0.08em;    
+	letter-spacing:0.08em;   
+	color: DarkGreen;
+	text-shadow: -2px 0 Aquamarine, 0 2px Aquamarine, 2px 0 Aquamarine, 0 -2px Aquamarine;
 }
 
 .headtext.mustplay {
@@ -135,8 +137,8 @@ a {
 }
 
 ul {
-    padding: 0px;
-    line-height: 1.5em;
+    padding: 0px 0px 15px 0px;
+    line-height: 1.6em;
     margin: 0px 0px 0px 18px;
 }
 
@@ -162,6 +164,36 @@ ol li {
     border-width: 1px;
 }
 
+#artlist {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#artlist a  {
+	font-size: 20px;
+	font-weight: 600;
+	color:DarkSeaGreen;
+}
+
+#artlist li {
+	margin-top: 28px;
+	padding-left: 1.7em;
+	text-indent: -1.7em;
+}
+
+#artlist li.like:before {
+	content: '✅'
+}
+
+#artlist li.meh:before {
+	content: '⚠️'
+}
+
+#artlist li.dislike:before {
+	content: '⛔'
+}
+
 #directions ol li:focus {
     background-color: #29290e;
     border-radius: 5px;
@@ -177,6 +209,7 @@ table {
 th {
 	border: 1px solid DarkSlateBlue;
 	padding:5px;
+	background-color: DarkSlateBlue;
 }
 
 td {
@@ -196,7 +229,7 @@ h2 {
 }
 
 h3 {
-    color: var(--purple);
+    color: DarkSeaGreen;
     font-size: 26px;
     margin: 36px 0px 12px 0px;
 }
